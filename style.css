@@ -1,7 +1,11 @@
 body{
     font-family:sans-serif;
-    width:90%;
-    max-width:800px;
     background-color:white;
     color:black;
+}
+#content{
+    margin:auto;
+    margin-top:50px;
+    max-width:800px;
+    width:90%;  
 }
