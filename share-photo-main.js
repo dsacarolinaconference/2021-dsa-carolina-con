@@ -72,8 +72,8 @@ function renderCanvas() {
 
         scale = scale * (1 + (document.getElementById("img-size").value / 20));
 
-XOff = XOff * scale * 2;
-YOff = YOff * scale * 2;
+XOff = XOff * scale * 5;
+YOff = YOff * scale * 5;
     }
 
 
