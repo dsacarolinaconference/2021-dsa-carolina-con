@@ -9,3 +9,6 @@ body{
     max-width:800px;
     width:90%;  
 }
+a, a:link, a:visited, a:hover{
+    color:magenta;
+}
