@@ -72,10 +72,9 @@ function renderCanvas() {
 
         scale = scale * (1 + (document.getElementById("img-size").value / 20));
 
-XOff = XOff * scale * 5;
-YOff = YOff * scale * 5;
+        XOff = XOff * scale * 10;
+        YOff = YOff * scale * 10;
     }
-
 
     ctx.drawImage(myimg, XOff + bullseyeX - (myimg.width * scale) / 2, YOff + bullseyeY - (myimg.height * scale) / 2, myimg.width * scale, myimg.height * scale);
 
@@ -114,7 +113,6 @@ function isReady() {
         document.getElementById("top-control").style.visibility = "visible";
     }, 1500);
 
-
 }
 
 function readyCheck() {
@@ -124,7 +122,6 @@ function readyCheck() {
 }
 
 function setUpUploadButton() {
-
 
     let imgInput = document.getElementById('imageInput');
     imgInput.addEventListener('change', function (e) {
@@ -146,19 +143,19 @@ function setUpUploadButton() {
 
 }
 
-function downloadCanvas(){  
+function downloadCanvas() {
     // get canvas data  
     var canvas = document.getElementById("myCanvas");
-    var image = canvas.toDataURL();  
-  
+    var image = canvas.toDataURL();
+
     // create temporary link  
-    var tmpLink = document.createElement( 'a' );  
+    var tmpLink = document.createElement('a');
     tmpLink.download = 'image.png'; // set the name of the download file 
-    tmpLink.href = image;  
-  
+    tmpLink.href = image;
+
     // temporarily add link to body and initiate the download  
-    document.body.appendChild( tmpLink );  
-    tmpLink.click();  
-    document.body.removeChild( tmpLink );  
+    document.body.appendChild(tmpLink);
+    tmpLink.click();
+    document.body.removeChild(tmpLink);
 }
 
