@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <outer>
+        <h1>Make Your Own 2021 Carolina Conference Image Thing</h1>
+        <div id="loading">Loading . . . </div>
+        <div id='top-control'>
+            <h2>Step one: upload an image:</h2>
+            <p>Square photos might work better, as might images that are 250px or larger. Not too big though.</p>
+            <p>
+                <input type="file" id="imageInput" accept="image/*">
+            </p>
+            <h2>Step two: adjust the position.</h2>
+            <p>
+                <input type="range" id="x-offset" name="x-offset" value="50">
+                <label for="x-offset">Horizontal Position</label>
+            </p>
+            <p>
+                <input type="range" id="y-offset" name="y-offset" value="50">
+                <label for="y-offset">Vertical Position</label>
+            </p>
+            <p>
+                <input type="range" id="img-size" name="img-size" value="0">
+                <label for="img-size">Size</label>
+            </p>
+            <h2>Step three: type your first name:</h2>
+            <p><input id="first-name" name="first-name" type="text" value="[name]"></p>
+            <h2>Step four: download the image</h2>
+            <p><button id='download' onclick="downloadCanvas()">Click to Download</button></p>
+            <h2>Step five: share on social media</h2>
+            <p>Share to Facebook, Twitter, and Instagram! Use the hashtag <span style="color:magenta">#DSACarolinaCon</span></p>
+        </div>
+
+        <canvas id="myCanvas" width="1080" height="607">
+            Loading . . .
+        </canvas>
+
+    </outer>
+</body>
+
+</html>
