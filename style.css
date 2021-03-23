@@ -12,3 +12,15 @@ body{
 a, a:link, a:visited, a:hover{
     color:magenta;
 }
+.flex-container{
+    flex-wrap: wrap;
+    display:flex;
+}
+.flex-content{
+    border:1px solid darkblue;
+    border-radius: 4px;
+    margin:10px;
+    padding:10px;
+    font-size:larger;
+    width:225px;
+}
