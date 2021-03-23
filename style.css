@@ -1,29 +1,7 @@
-body,
-#outer {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-h2 {
-    font-weight: bold;
-    color: magenta;
-    background-color: darkblue;
-    padding: 15px;
-    border-radius: 4px;
-}
-
-#top-control {
-    margin: 20px;
-    visibility: hidden;
-}
-
-#loading {
-    font-size: larger;
-    font-family: 'Roboto Mono', monospace;
-    margin: 50px;
-    padding: 20px;
-    border: 5px solid black;
-    color: red;
+body{
+    font-family:sans-serif;
+    width:90%;
+    max-width:800px;
+    background-color:white;
+    color:black;
 }
