@@ -24,7 +24,7 @@ window.onload = function () {
         readyCheck();
     }
 
-    templateImg.src = "template.png";
+    templateImg.src = "templatev2.png";
     ringImg.src = "ring.png";
     defaultImg.src = "default_photo.png";
 
@@ -95,6 +95,10 @@ function renderCanvas() {
     ctx.strokeText("and I'm attending the", 50, 105);
     ctx.fillText("conference. Join me!", 50, 160);
     ctx.strokeText("conference. Join me!", 50, 160);
+
+    ctx.font = "35px Roboto Mono";
+    ctx.fillText("dsacarolinaconference.org", 35, 570);
+    ctx.strokeText("dsacarolinaconference.org", 35, 570);
 
     if (ringHasLoaded) {
 
