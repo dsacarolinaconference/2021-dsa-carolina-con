@@ -111,8 +111,15 @@ function renderCanvas() {
     document.getElementById("canvasScaled").width = document.documentElement.clientWidth;
     document.getElementById("canvasScaled").height = (document.documentElement.clientWidth * 9) / 16;
 
-    //TODO write from the hidden canvas to the visible one:
+    //*** write from the hidden canvas to the visible one:
 
+    //Look at this: https://stackoverflow.com/questions/4405336/how-to-copy-contents-of-one-canvas-to-another-canvas-locally
+
+    //grab the context from your destination canvas
+    var destCtx = document.getElementById("canvasScaled").getContext('2d');
+
+    //call its drawImage() function passing it the source canvas directly
+    destCtx.drawImage(c, 0, 0, document.getElementById("canvasScaled").width, document.getElementById("canvasScaled").height);
 };
 
 function isReady() {
