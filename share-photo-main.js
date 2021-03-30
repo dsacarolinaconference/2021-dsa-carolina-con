@@ -84,20 +84,30 @@ function renderCanvas() {
         ctx.drawImage(templateImg, 0, 0);
     }
 
+    ctx.beginPath();
+    ctx.lineWidth = "1";
+    ctx.strokeStyle = "darkBlue";
+    ctx.fillStyle = "darkBlue";
+    ctx.rect(0, 540, 600, 40);
+    ctx.stroke();
+    ctx.fill();
+
+
     ctx.font = "45px Roboto Mono";
     ctx.fillStyle = "#FF00FF";
     ctx.strokeStyle = "#000000";
     var textLine = "Hi, my name is " + document.getElementById("first-name").value;
     ctx.fillText(textLine, 50, 50);
-    ctx.strokeText(textLine, 50, 50);
+    //ctx.strokeText(textLine, 50, 50);
     ctx.fillText("and I'm attending the", 50, 105);
-    ctx.strokeText("and I'm attending the", 50, 105);
+    //ctx.strokeText("and I'm attending the", 50, 105);
     ctx.fillText("conference. Join me!", 50, 160);
-    ctx.strokeText("conference. Join me!", 50, 160);
+    //ctx.strokeText("conference. Join me!", 50, 160);
 
     ctx.font = "35px Roboto Mono";
+    ctx.strokeStyle = "#FF00FF";
     ctx.fillText("dsacarolinaconference.org", 35, 570);
-    ctx.strokeText("dsacarolinaconference.org", 35, 570);
+    //ctx.strokeText("dsacarolinaconference.org", 35, 570);
 
     if (ringHasLoaded) {
 
@@ -106,7 +116,7 @@ function renderCanvas() {
     }
 
     var newCanvasWidth = Math.min(document.documentElement.clientWidth, 1080);
-    var newCanvasHeight = (newCanvasWidth * 9)/16;
+    var newCanvasHeight = (newCanvasWidth * 9) / 16;
 
     document.getElementById("canvasScaled").width = newCanvasWidth;
     document.getElementById("canvasScaled").height = newCanvasHeight;
