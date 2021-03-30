@@ -96,13 +96,18 @@ function renderCanvas() {
 
     //render the rectangle behind the top left text:
 
-    ctx.beginPath();
-    ctx.lineWidth = "1";
-    ctx.strokeStyle = "rgba(0,0,139,0.5)";
-    ctx.fillStyle = "rgba(0,0,139,0.35)";
-    ctx.rect(25, 5, 720, 200);
-    ctx.stroke();
-    ctx.fill();
+    //ctx.beginPath();
+    //ctx.lineWidth = "1";
+    //ctx.strokeStyle = "rgba(0,0,139,0.5)";
+    //ctx.fillStyle = "rgba(0,0,139,0.35)";
+    //ctx.rect(25, 5, 720, 200);
+    //ctx.stroke();
+    //ctx.fill();
+
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+    ctx.shadowBlur = 2;
+    ctx.shadowColor = "rgba(0, 0, 139, 1.0)";
 
     ctx.font = "45px Roboto Mono";
     ctx.fillStyle = "#FF00FF";
@@ -114,6 +119,10 @@ function renderCanvas() {
     //ctx.strokeText("and I'm attending the", 50, 105);
     ctx.fillText("conference. Join me!", 50, 160);
     //ctx.strokeText("conference. Join me!", 50, 160);
+
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.shadowBlur = 0;
 
     ctx.font = "35px Roboto Mono";
     ctx.strokeStyle = "#FF00FF";
