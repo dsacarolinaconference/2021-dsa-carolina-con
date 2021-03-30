@@ -84,14 +84,25 @@ function renderCanvas() {
         ctx.drawImage(templateImg, 0, 0);
     }
 
+    //render the rectangle behind the website address:
+
     ctx.beginPath();
     ctx.lineWidth = "1";
-    ctx.strokeStyle = "darkBlue";
-    ctx.fillStyle = "darkBlue";
-    ctx.rect(0, 540, 600, 40);
+    ctx.strokeStyle = "rgba(0,0,139,0.5)";
+    ctx.fillStyle = "rgba(0,0,139,0.35)";
+    ctx.rect(0, 538, 600, 40);
     ctx.stroke();
     ctx.fill();
 
+    //render the rectangle behind the top left text:
+
+    ctx.beginPath();
+    ctx.lineWidth = "1";
+    ctx.strokeStyle = "rgba(0,0,139,0.5)";
+    ctx.fillStyle = "rgba(0,0,139,0.35)";
+    ctx.rect(25, 5, 720, 200);
+    ctx.stroke();
+    ctx.fill();
 
     ctx.font = "45px Roboto Mono";
     ctx.fillStyle = "#FF00FF";
