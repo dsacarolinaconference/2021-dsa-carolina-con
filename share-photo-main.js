@@ -78,7 +78,6 @@ function renderCanvas() {
 
     ctx.drawImage(myimg, XOff + bullseyeX - (myimg.width * scale) / 2, YOff + bullseyeY - (myimg.height * scale) / 2, myimg.width * scale, myimg.height * scale);
 
-
     ///end rendering the portrait photo
 
     if (templateHasLoaded) {
@@ -106,19 +105,11 @@ function renderCanvas() {
 
     }
 
-    //Resize the visible canvas:
-
     document.getElementById("canvasScaled").width = document.documentElement.clientWidth;
     document.getElementById("canvasScaled").height = (document.documentElement.clientWidth * 9) / 16;
 
-    //*** write from the hidden canvas to the visible one:
-
-    //Look at this: https://stackoverflow.com/questions/4405336/how-to-copy-contents-of-one-canvas-to-another-canvas-locally
-
-    //grab the context from your destination canvas
     var destCtx = document.getElementById("canvasScaled").getContext('2d');
 
-    //call its drawImage() function passing it the source canvas directly
     destCtx.drawImage(c, 0, 0, document.getElementById("canvasScaled").width, document.getElementById("canvasScaled").height);
 };
 
@@ -176,4 +167,3 @@ function downloadCanvas() {
     tmpLink.click();
     document.body.removeChild(tmpLink);
 }
-
