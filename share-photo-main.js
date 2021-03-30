@@ -105,8 +105,11 @@ function renderCanvas() {
 
     }
 
-    document.getElementById("canvasScaled").width = document.documentElement.clientWidth;
-    document.getElementById("canvasScaled").height = (document.documentElement.clientWidth * 9) / 16;
+    var newCanvasWidth = Math.min(document.documentElement.clientWidth, 1080);
+    var newCanvasHeight = (newCanvasWidth * 9)/16;
+
+    document.getElementById("canvasScaled").width = newCanvasWidth;
+    document.getElementById("canvasScaled").height = newCanvasHeight;
 
     var destCtx = document.getElementById("canvasScaled").getContext('2d');
 
