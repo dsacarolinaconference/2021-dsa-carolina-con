@@ -28,3 +28,8 @@ h2 {
     border: 5px solid black;
     color: red;
 }
+
+#myCanvas{
+    display: none;
+    visibility: hidden;
+}

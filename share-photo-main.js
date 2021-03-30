@@ -106,6 +106,13 @@ function renderCanvas() {
 
     }
 
+    //Resize the visible canvas:
+
+    document.getElementById("canvasScaled").width = document.documentElement.clientWidth;
+    document.getElementById("canvasScaled").height = (document.documentElement.clientWidth * 9) / 16;
+
+    //TODO write from the hidden canvas to the visible one:
+
 };
 
 function isReady() {
