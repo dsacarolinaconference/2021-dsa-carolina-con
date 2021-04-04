@@ -16,13 +16,58 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="yourfavicon.png">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+
+    <div class="modal" id="agendaSummary" tabindex="-1" role="dialog" aria-labelledby="agendaSummaryLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agendaSummaryLabel">Conference Program Summary</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h2 class="pb-5 text-center">2021 DSA Carolina Conference - Program Summary</h2>
+                    <h3>Saturday Plenary Sessions</h3>
+                    <p>Saturday morning, we’ll kick things off with an introductory session with all the Carolina
+                        chapters introducing themselves and sharing what they’ve been up to.</p>
+                    <p>
+                        In the afternoon’s plenary sessions, we’ll take a deep dive into the labor history of the
+                        Carolina states, and skill up with an interactive training session on what we can do to help
+                        build DSA into a mass organization.
+                    </p>
+                    <p>We'll also have opportunities to engage in trainings in mutual aid and political education
+                        projects.</p>
+                    <h3>Sunday Breakout Sessions</h3>
+                    <p>Sunday will offer a wealth of issue-related panels on housing justice, Medicare For All,
+                        socialist feminism, eco-socialism, and labor organizing. We’ll close out the conference with a
+                        final plenary session in the late afternoon to talk about how we can build state-wide and
+                        regional power in the Carolinas for 2021 and beyond.</p>
+                    <hr />
+                    <p class="text-right">- Full conference program forthcoming.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="cont" class="container-sm">
 
@@ -66,35 +111,25 @@
         </div>
 
         <div class="row">
+            <div class="col-sm-6 my-3">
+                <div class="pod m-2 p-2 h-100">
+                    <p><a href="javascript:void(0)" data-toggle="modal" data-target="#agendaSummary" id="program-summary-link">View the conference
+                            program summary.</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-sm-12 invisible my-3">
                 <div class="pod m-2 p-2 h-100">
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12 my-3">
-                <div class="pod m-2 p-2 h-100">
-
-                    <h2 class="pb-5 text-center">2021 DSA Carolina Conference - Program Summary</h2>
-                    <h3>Saturday Plenary Sessions</h3>
-                    <p>Saturday morning, we’ll kick things off with an introductory session with all the Carolina chapters introducing themselves and sharing what they’ve been up to.</p>
-                    <p>
-                        In the afternoon’s plenary sessions, we’ll take a deep dive into the labor history of the Carolina states, and skill up with an interactive training session on what we can do to help build DSA into a mass organization.
-                    </p>
-                    <p>We'll also have opportunities to engage in trainings in mutual aid and political education projects.</p>
-                    <h3>Sunday Breakout Sessions</h3>
-                    <p>Sunday will offer a wealth of issue-related panels on housing justice, Medicare For All, socialist feminism, eco-socialism, and labor organizing. We’ll close out the conference with a final plenary session in the late afternoon to talk about how we can build state-wide and regional power in the Carolinas for 2021 and beyond.</p>
-                    <hr/>
-                    <p class="text-right">- Full conference program forthcoming.</p>
-
-                </div>
-            </div>
-        </div>
-
-
 
     </div>
+
 
 </body>
 
