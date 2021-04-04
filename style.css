@@ -3,12 +3,6 @@ body{
     background-color:white;
     color:black;
 }
-#content{
-    margin:auto;
-    margin-top:50px;
-    max-width:800px;
-    width:90%;  
-}
 a, a:link, a:visited, a:hover{
     color:magenta;
 }
@@ -16,11 +10,12 @@ a, a:link, a:visited, a:hover{
     flex-wrap: wrap;
     display:flex;
 }
-.flex-content{
-    border:1px solid darkblue;
+#cont{
+    max-width:600px;
+    margin-top:20px;
+}
+.pod{
+    border:solid magenta 1px;
     border-radius: 4px;
-    margin:10px;
-    padding:10px;
-    font-size:larger;
-    width:225px;
+
 }
