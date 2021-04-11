@@ -44,6 +44,6 @@ a, a:link, a:visited, a:hover{
 
   .session-time{
       font-family:monospace;
-      background-color:darkblue;
-      color:white;
+      /*background-color:darkblue;
+      color:white; */
   }
