@@ -36,3 +36,14 @@ a, a:link, a:visited, a:hover{
   #footer-img{
       height:50px;
   }
+
+  h1{
+      margin-bottom:50px;
+      margin-top:50px;
+  }
+
+  .session-time{
+      font-family:monospace;
+      background-color:darkblue;
+      color:white;
+  }

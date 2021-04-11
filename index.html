@@ -24,11 +24,13 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
 <body style="margin-bottom:60px;">
+
+    <!-- modal box for the program summary -->
 
     <div class="modal" id="agendaSummary" tabindex="-1" role="dialog" aria-labelledby="agendaSummaryLabel"
         aria-hidden="true">
@@ -58,8 +60,6 @@
                         socialist feminism, eco-socialism, and labor organizing. We’ll close out the conference with a
                         final plenary session in the late afternoon to talk about how we can build state-wide and
                         regional power in the Carolinas for 2021 and beyond.</p>
-                    <hr />
-                    <p class="text-right">- Full conference program forthcoming.</p>
 
                 </div>
                 <div class="modal-footer">
@@ -68,6 +68,126 @@
             </div>
         </div>
     </div>
+
+    <!-- end modal -->
+
+    <!-- modal box for the full program-->
+
+    <div class="modal" id="full-program" tabindex="-1" role="dialog" aria-labelledby="full-program-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="full-program-label">Conference Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="container">
+
+                        <div id="row">
+                            <h1>Saturday, April 17th</h1>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                10:30am
+                            </div>
+                            <div class="col-8 p-1">
+                                Chapter Roundtable ("Opening Ceremonies")
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                1:00pm
+                            </div>
+                            <div class="col-8 p-1">
+                                Carolina Labor History Teach-In
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                2:00pm
+                            </div>
+                            <div class="col-8 p-1">
+                                <span class="badge badge-pill badge-secondary">Breakout Session</span> Mutual Aid How-To
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                2:30pm
+                            </div>
+                            <div class="col-8 p-1">
+                                "How to Build a Mass Organization" Training
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                4:00pm
+                            </div>
+                            <div class="col-8 p-1">
+                                Political Education
+                            </div>
+                        </div>
+
+
+
+                        <div id="row">
+                            <h1>Sunday, April 18th</h1>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                10:30am
+                            </div>
+                            <div class="col-8 p-1">
+                                Strategizing Regional and State Level Organizing
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                1:00pm
+                            </div>
+                            <div class="col-8 p-1">
+                                <span class="badge badge-pill badge-secondary">Breakout Session</span> Medicare For All<span class="badge badge-pill badge-secondary">Breakout Session</span> Electoral Campaigns
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                2:30pm
+                            </div>
+                            <div class="col-8 p-1">
+                                <span class="badge badge-pill badge-secondary">Breakout Session</span> Labor & EWOC<br /><span class="badge badge-pill badge-secondary">Breakout Session</span>  Housing Justice
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                4:00pm
+                            </div>
+                            <div class="col-8 p-1">
+                                <span class="badge badge-pill badge-secondary">Breakout Session</span> Socialist Feminism<br /><span class="badge badge-pill badge-secondary">Breakout Session</span> Eco-socialism & Green New Deal
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-4 p-1 session-time">
+                                5:30pm
+                            </div>
+                            <div class="col-8 p-1">
+                                Regional Strategy Wrapup ("Closing Ceremonies")
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal -->
 
     <div id="cont" class="container-sm">
 
@@ -113,8 +233,17 @@
         <div class="row">
             <div class="col-sm-6 my-3">
                 <div class="pod m-2 p-2 h-100">
-                    <p><a href="javascript:void(0)" data-toggle="modal" data-target="#agendaSummary" id="program-summary-link">View the conference
-                            program summary.</a> Full program coming soon.</p>
+                    <p><a href="javascript:void(0)" data-toggle="modal" data-target="#agendaSummary"
+                            id="program-summary-link">View the conference
+                            program summary.</a></p>
+                </div>
+
+            </div>
+            <div class="col-sm-6 my-3">
+                <div class="pod m-2 p-2 h-100">
+                    <p>⭐️ NEW! ⭐️ <a href="javascript:void(0)" data-toggle="modal" data-target="#full-program"
+                            id="full-program-link">View the full conference
+                            program.</a></p>
                 </div>
 
             </div>
@@ -132,9 +261,9 @@
 
     <footer class="footer">
         <div class="container text-center">
-          <img id="footer-img" src="footer-icon-sm.png"></img><span> 2021 DSA Carolina Conference</span>
+            <img id="footer-img" src="footer-icon-sm.png"></img><span> 2021 DSA Carolina Conference</span>
         </div>
-      </footer>
+    </footer>
 
 </body>
 
