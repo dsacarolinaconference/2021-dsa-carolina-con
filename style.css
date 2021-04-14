@@ -47,3 +47,8 @@ a, a:link, a:visited, a:hover{
       /*background-color:darkblue;
       color:white; */
   }
+
+  #top-banner{
+      background-color:darkblue;
+      color:magenta;
+  }
